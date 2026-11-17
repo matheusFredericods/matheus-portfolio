@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* =========================
+   DESIGN TOKENS
+========================= */
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #0a0a0a;
+  --bg-card: #1a1a1a;
+
+  /* Brand Colors */
+  --primary: #d3e97a;
+  --natural-black: #000000;
+
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #c7c7c7;
+
+  /* Border Colors */
+  --border-primary: #333333;
+
+  /* Interactive States */
+  --primary-hover: #c2d96b;
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-manrope), sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bebas), sans-serif;
+}
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+  background-color: var(--primary);
+  color: var(--natural-black);
+}
