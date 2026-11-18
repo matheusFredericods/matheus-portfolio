@@ -1,33 +1,33 @@
 @import "tailwindcss";
 
-/* =========================
-   DESIGN TOKENS
-========================= */
-
+/* DESIGN TOKENS */
 :root {
   /* Backgrounds */
   --bg-primary: #0a0a0a;
   --bg-card: #1a1a1a;
 
-  /* Brand Colors */
+  /* Brand */
   --primary: #d3e97a;
   --natural-black: #000000;
 
-  /* Text Colors */
+  /* Text */
   --text-primary: #ffffff;
   --text-secondary: #c7c7c7;
 
-  /* Border Colors */
+  /* Borders */
   --border-primary: #333333;
 
-  /* Interactive States */
+  /* States */
   --primary-hover: #c2d96b;
 }
 
-/* =========================
-   GLOBAL STYLES
-========================= */
+/* TAILWIND THEME */
+@theme inline {
+  --color-text-secondary: var(--text-secondary);
+  --color-primary-hover: var(--primary-hover);
+}
 
+/* GLOBAL STYLES */
 * {
   box-sizing: border-box;
 }
@@ -39,15 +39,12 @@ html {
 body {
   min-height: 100vh;
   font-family: var(--font-manrope), sans-serif;
-  background-color: var(--bg-primary);
+  background: var(--bg-primary);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
 }
 
-/* =========================
-   TYPOGRAPHY
-========================= */
-
+/* TYPOGRAPHY */
 h1,
 h2,
 h3,
@@ -57,11 +54,8 @@ h6 {
   font-family: var(--font-bebas), sans-serif;
 }
 
-/* =========================
-   SELECTION
-========================= */
-
+/* SELECTION */
 ::selection {
-  background-color: var(--primary);
+  background: var(--primary);
   color: var(--natural-black);
 }
