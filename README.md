@@ -25,7 +25,7 @@ Personal portfolio developed to showcase my professional experience, technical s
 Clone the repository:
 
 ```bash
-git clone https://github.com/matheusFredericods/portfolio-novo.git
+git clone https://github.com/matheusFredericods/matheus-portfolio
 ```
 
 Install dependencies:
