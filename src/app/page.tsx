@@ -1,12 +1,18 @@
+import Hero from "../sections/Hero";
 import NavBar from "./components/layout/NavBar";
+import Preloader from "./components/Preloader";
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Preloader />
+
+      <div>
         <NavBar />
-        <main>
-          {/* Texto futuro */}
-        </main>
-    </div>
+        <Hero />
+
+        <main></main>
+      </div>
+    </>
   );
 }

@@ -9,6 +9,7 @@ Personal portfolio developed to showcase my professional experience, technical s
 - TypeScript
 - Tailwind CSS
 - Lucide React
+- React Icons
 
 ## 📌 Features
 
@@ -25,7 +26,7 @@ Personal portfolio developed to showcase my professional experience, technical s
 Clone the repository:
 
 ```bash
-git clone https://github.com/matheusFredericods/matheus-portfolio
+git clone https://github.com/matheusFredericods/matheus-portfolio.git
 ```
 
 Install dependencies:
