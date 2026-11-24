@@ -8,7 +8,7 @@ export default function NavBar() {
 
   return (
     <header className="w-full">
-      <nav className="mx-4 my-9 flex max-w-6xl items-center justify-between px-3 py-2 md:mx-15">
+      <nav className="mx-4 my-5 flex max-w-6xl items-center justify-between px-3 py-2 md:mx-15">
         {/* Nome */}
         <h1 className="text-3xl md:text-4xl">Matheus Santos</h1>
 
@@ -29,7 +29,7 @@ export default function NavBar() {
           <li>
             <a
               href="#inicio"
-              className="transition-colors duration-300 hover:text-primary-hover"
+              className="transition-colors duration-300 hover:text-primary"
             >
               Início
             </a>
@@ -38,7 +38,7 @@ export default function NavBar() {
           <li>
             <a
               href="#projetos"
-              className="transition-colors duration-300 hover:text-primary-hover"
+              className="transition-colors duration-300 hover:text-primary"
             >
               Projetos
             </a>
@@ -47,7 +47,7 @@ export default function NavBar() {
           <li>
             <a
               href="#sobre"
-              className="transition-colors duration-300 hover:text-primary-hover"
+              className="transition-colors duration-300 hover:text-primary"
             >
               Sobre
             </a>
@@ -56,7 +56,7 @@ export default function NavBar() {
           <li>
             <a
               href="#contato"
-              className="transition-colors duration-300 hover:text-primary-hover"
+              className="transition-colors duration-300 hover:text-primary"
             >
               Contato
             </a>

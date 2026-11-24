@@ -23,9 +23,23 @@
 
 /* TAILWIND THEME */
 @theme inline {
-  --color-text-secondary: var(--text-secondary);
-  --color-primary-hover: var(--primary-hover);
+  /* Backgrounds */
+  --color-bg-primary: var(--bg-primary);
   --color-card: var(--bg-card);
+
+  /* Brand */
+  --color-primary: var(--primary);
+  --color-natural-black: var(--natural-black);
+
+  /* Text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  /* Borders */
+  --color-border-primary: var(--border-primary);
+
+  /* States */
+  --color-primary-hover: var(--primary-hover);
 }
 
 /* GLOBAL STYLES */

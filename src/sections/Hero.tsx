@@ -1,12 +1,17 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-(--bg-primary) text-(--text-primary)">
-      <div className="mx-auto flex min-h-screen max-w-6xl items-center px-6">
-        <div className="flex w-full max-w-140 flex-col items-start">
+    <section
+      id="inicio"
+      className="min-h-screen bg-bg-primary text-text-primary"
+    >
+      <div className="mx-auto grid min-h-screen max-w-6xl grid-cols-1 items-center gap-12 px-6 pt-10 pb-24 md:grid-cols-[1.2fr_0.8fr] md:pt-0">
+        {/* LADO ESQUERDO */}
+        <div className="flex w-full min-w-0 flex-col items-start">
           {/* Título */}
-          <h1 className="text-[101px] leading-[0.85]">
+          <h1 className="text-[clamp(3.5rem,7vw,101px)] leading-[0.85] tracking-tight">
             <span className="block">OLÁ, EU SOU</span>
             <span className="block">MATHEUS SANTOS.</span>
           </h1>
@@ -19,13 +24,13 @@ export default function Hero() {
           </p>
 
           {/* Ações */}
-          <div className="mt-5 flex items-center gap-3">
+          <div className="mt-5 flex flex-wrap items-center gap-3">
             <a
               href="#contato"
-              className="flex items-center gap-5 rounded-full bg-(--primary) px-6 py-3 font-semibold text-(--natural-black) transition-colors hover:bg-primary-hover"
+              className="flex items-center gap-5 rounded-full bg-primary px-6 py-3 font-semibold text-natural-black transition-colors hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               ENTRE EM CONTATO
-              <span>●</span>
+              <span aria-hidden="true">●</span>
             </a>
 
             <a
@@ -33,7 +38,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex size-12 items-center justify-center rounded-full bg-card text-(--primary) transition-all hover:bg-(--primary) hover:text-(--natural-black)"
+              className="flex size-12 items-center justify-center rounded-full border border-border-primary bg-card text-primary transition-all hover:border-primary hover:bg-primary hover:text-natural-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <FaGithub size={22} />
             </a>
@@ -43,11 +48,23 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex size-12 items-center justify-center rounded-full bg-card text-(--primary) transition-all hover:bg-(--primary) hover:text-(--natural-black)"
+              className="flex size-12 items-center justify-center rounded-full border border-border-primary bg-card text-primary transition-all hover:border-primary hover:bg-primary hover:text-natural-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <FaLinkedinIn size={22} />
             </a>
           </div>
+        </div>
+
+        {/* LADO DIREITO - FOTO */}
+        <div className="relative mx-auto aspect-2/3 w-full max-w-95 overflow-hidden rounded-2xl">
+          <Image
+            src="/images/foto-perfil.png"
+            alt="Matheus Santos"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 380px"
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
