@@ -16,6 +16,7 @@
 
   /* Borders */
   --border-primary: #333333;
+  --border-divider: #484848;
 
   /* States */
   --primary-hover: #c2d96b;
@@ -37,6 +38,7 @@
 
   /* Borders */
   --color-border-primary: var(--border-primary);
+  --color-border-divider: var(--border-divider);
 
   /* States */
   --color-primary-hover: var(--primary-hover);

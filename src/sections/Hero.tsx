@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="min-h-screen bg-bg-primary text-text-primary"
+      className="min-h-screen bg-bg-primary border-b border-border-divider text-text-primary"
     >
       <div className="mx-auto grid min-h-screen max-w-6xl grid-cols-1 items-center gap-12 px-6 pt-10 pb-24 md:grid-cols-[1.2fr_0.8fr] md:pt-0">
         {/* LADO ESQUERDO */}
